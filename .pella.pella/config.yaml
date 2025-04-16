@@ -1,1 +1,1 @@
-entrypoint: python main.py
+entrypoint: "python main.py"
