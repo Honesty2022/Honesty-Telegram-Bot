@@ -5,7 +5,9 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 import os
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # Instead of putting your token directly
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+  # Instead of putting your token directly
 
 # Replace this with your actual bot token
 
