@@ -4,7 +4,11 @@ os.system('pip install python-telegram-bot flask')
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-BOT_TOKEN = "7801180845:AAHGklxcc997aaEZSaQkkCsbsTlsvuqgE-I"  # Replace this with your actual bot token
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Instead of putting your token directly
+
+
+#BOT_TOKEN = "7801180845:AAHGklxcc997aaEZSaQkkCsbsTlsvuqgE-I"  # Replace this with your actual bot token
 
 # Step 1: Main questions
 questions = {
